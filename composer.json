@@ -1,6 +1,7 @@
 {
     "name": "sbgo/tencent-open-health-ecard",
     "description": "腾讯开放平台居民电子健康卡请求sdk封装",
+    "version":"1.0.0",
     "type": "library",
     "license": "mit",
     "authors": [
@@ -12,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",
-        "guzzlehttp/guzzle": "6.3.*",
+        "guzzlehttp/guzzle": "^6.0",
         "psr/log": "~1.0",
         "ext-curl": "*"
     },
