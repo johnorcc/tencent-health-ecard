@@ -61,6 +61,15 @@ class HttpClient
         $str = '';
         $i = 0;
         foreach ($param as $k => $v) {
+            if(is_array($v)){
+                foreach ($v as $kk => $vv){
+                    if(is_array($vv)){
+                        ksort($vv);
+                    }
+                    $v[$kk] = $vv;
+                }
+                $v = json_encode($v,320);
+            }
             if ($i == 0) {
                 $str = $k . '=' . $v;
             } else {
