@@ -65,6 +65,12 @@ class Response implements ArrayAccess
         return isset($this->commonOut['resultCode']) && $this->commonOut['resultCode'] === 0;
     }
 
+    public function resultCode()
+    {
+        if (isset($this->commonOut)) return $this->commonOut['resultCode'];
+        return 0;
+    }
+
     public function errMsg()
     {
         if (isset($this->commonOut)) return $this->commonOut['errMsg'];
