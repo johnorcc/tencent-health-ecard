@@ -26,6 +26,7 @@ class Client
     const ACTION_BIND_CARD_RELATION = "/ISVOpenObj/bindCardRelation";//绑定院内卡
     const ACTION_REPORT_HIS_DATA = "/ISVOpenObj/reportHISData"; //用卡数据上报
     const ACTION_BATCH_REGISTER = "/ISVOpenObj/registerBatchHealthCard"; //批量注册
+    const ACTION_UNIFORM_ORDER = "/ISVOpenObj/registerUniformOrder"; // 注册统一订单ID
 
     public function __construct(HttpClient $client)
     {
